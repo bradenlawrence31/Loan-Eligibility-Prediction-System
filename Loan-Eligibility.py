@@ -12,9 +12,9 @@ class LoanEligibilityCalculator:
         """Connect to Oracle 19c database (manual credentials)"""
         try:
             # 🔽 Type your Oracle username, password, and DSN manually here
-            username = "c##ronny"
-            password = "1234"
-            dsn = "localhost:1521/orcldb"  # Example DSN – edit if different
+            username = "user"
+            password = "password"
+            dsn = "localhost"  # Example DSN – edit if different
 
             self.connection = oracledb.connect(
                 user=username,
@@ -261,3 +261,4 @@ class LoanEligibilityCalculator:
 if __name__ == "__main__":
     calculator = LoanEligibilityCalculator()
     calculator.run()
+
